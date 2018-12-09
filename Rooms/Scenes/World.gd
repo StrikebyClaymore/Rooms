@@ -119,7 +119,7 @@ func CreateLabel(pos, text, node = null):
 	node.add_child(l)
 
 func GenerateDangeon():
-	for i in 5:#num_rooms:
+	for i in num_rooms:
 		var size = Vector2(more.IntRand(min_size, max_size), more.IntRand(min_size, max_size))
 		var pos = RoomPosRandom(size)
 		if pos == null:
